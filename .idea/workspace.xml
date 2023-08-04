@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment="" />
+    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":sparkles: 필요한 클래스 만듬">
+      <change beforePath="$PROJECT_DIR$/src/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kiosk.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -32,6 +41,39 @@
       <option name="presentableId" value="Default" />
       <updated>1691150348777</updated>
     </task>
+    <task id="LOCAL-00001" summary=":art: init">
+      <option name="closed" value="true" />
+      <created>1691150408227</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691150408227</updated>
+    </task>
+    <task id="LOCAL-00002" summary=":sparkles: 필요한 클래스 만듬">
+      <option name="closed" value="true" />
+      <created>1691150541931</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1691150541931</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value=":art: init" />
+    <MESSAGE value=":sparkles: 필요한 클래스 만듬" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles: 필요한 클래스 만듬" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Kiosk.java</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
