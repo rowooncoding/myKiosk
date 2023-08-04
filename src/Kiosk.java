@@ -25,7 +25,7 @@ public class Kiosk {
         }
 
         if(isInvetory((count))){
-            Order order = new Order();
+            Order order = new Order(menu, count, price);
             return order;
         }else{
             return null;
