@@ -3,7 +3,7 @@ public class Kiosk {
     private int inventory;
 
     // 키오스크 생성자
-    public Kiosk(){
+    public Kiosk(int inventory){
         this.inventory = inventory;
     }
 
@@ -21,6 +21,7 @@ public class Kiosk {
         }
 
         if(price == 0){
+            System.out.println("메뉴가 없습니다.");
             return null;
         }
 
@@ -28,6 +29,7 @@ public class Kiosk {
             Order order = new Order(menu, count, price);
             return order;
         }else{
+            System.out.println("재고가 부족합니다.");
             return null;
         }
 
@@ -40,6 +42,7 @@ public class Kiosk {
         if(inventory > count){
             return true;
         }else{
+            System.out.println("재고가 없습니다.");
             return false;
         }
     }

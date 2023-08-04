@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: orderPrice를 초기화 해주는 메소드 setOrderPrice 생성">
+    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: Order 클래스 메소드 완성">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kiosk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RunKiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RunKiosk.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691151971894</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=":art: Order 클래스 메소드 완성">
+      <option name="closed" value="true" />
+      <created>1691152186493</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1691152186493</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -123,6 +134,7 @@
     <MESSAGE value=":art: 키오스크 클래스 생성완료" />
     <MESSAGE value=":art: Order클래스 생성자 완료" />
     <MESSAGE value=":art: orderPrice를 초기화 해주는 메소드 setOrderPrice 생성" />
-    <option name="LAST_COMMIT_MESSAGE" value=":art: orderPrice를 초기화 해주는 메소드 setOrderPrice 생성" />
+    <MESSAGE value=":art: Order 클래스 메소드 완성" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: Order 클래스 메소드 완성" />
   </component>
 </project>

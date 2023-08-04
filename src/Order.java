@@ -12,12 +12,13 @@ public class Order {
 
     public void setOrderPrice(int price){
         this.orderPrice = price * count;
+        System.out.println(orderPrice + " 원 입니다.");
     }
 
     public boolean runOrder(int deposit){
         int change = deposit - orderPrice;
-        if(deposit > orderPrice){
-            System.out.println("잔돈 " + change + "원 입니다.");
+        if(change >= 0){
+            System.out.println("잔돈 " + change + " 와 " + menu + "나왔습니다.");
             return true;
         }else{
             System.out.println("금액이 부족합니다.");
