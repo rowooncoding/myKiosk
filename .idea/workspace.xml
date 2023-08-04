@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: 키오스크 생성자 정의">
+    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: 재고 개수 관한 메소드 생성">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kiosk.java" afterDir="false" />
     </list>
@@ -78,7 +78,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691150773072</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=":art: 재고 개수 관한 메소드 생성">
+      <option name="closed" value="true" />
+      <created>1691151357492</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691151357492</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -86,6 +94,7 @@
     <MESSAGE value=":sparkles: 필요한 클래스 만듬" />
     <MESSAGE value=":art: 키오스크 클래스 정의" />
     <MESSAGE value=":art: 키오스크 생성자 정의" />
-    <option name="LAST_COMMIT_MESSAGE" value=":art: 키오스크 생성자 정의" />
+    <MESSAGE value=":art: 재고 개수 관한 메소드 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: 재고 개수 관한 메소드 생성" />
   </component>
 </project>

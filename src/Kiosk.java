@@ -7,6 +7,34 @@ public class Kiosk {
         this.inventory = inventory;
     }
 
+    public Order initOrder(String menu, int count){
+        int price = 0;
+
+        if (menu.equals("딸기요거트")){
+            price = 4500;
+        } else if (menu.equals("카페라떼") || menu.equals("밀크티")){
+            price = 3500;
+        } else if (menu.equals("아메리카노")){
+            price = 2000;
+        } else {
+            price = 0;
+        }
+
+        if(price == 0){
+            return null;
+        }
+
+        if(isInvetory((count))){
+            Order order = new Order();
+            return order;
+        }else{
+            return null;
+        }
+
+    }
+
+
+
     // 재고 개수 확인하여 불린 타입 반환
     public boolean isInvetory(int count){
         if(inventory > count){
