@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: 키오스크 클래스 생성완료">
-      <change beforePath="$PROJECT_DIR$/src/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kiosk.java" afterDir="false" />
+    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: Order클래스 생성자 완료">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691151675110</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=":art: Order클래스 생성자 완료">
+      <option name="closed" value="true" />
+      <created>1691151847197</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691151847197</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -104,6 +112,7 @@
     <MESSAGE value=":art: 키오스크 생성자 정의" />
     <MESSAGE value=":art: 재고 개수 관한 메소드 생성" />
     <MESSAGE value=":art: 키오스크 클래스 생성완료" />
-    <option name="LAST_COMMIT_MESSAGE" value=":art: 키오스크 클래스 생성완료" />
+    <MESSAGE value=":art: Order클래스 생성자 완료" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: Order클래스 생성자 완료" />
   </component>
 </project>

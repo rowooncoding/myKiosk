@@ -7,9 +7,12 @@ public class Order {
     public Order(String menu, int count, int price){
         this.menu = menu;
         this.count = count;
-        // 메소드 통해서 주문금액 할당
+        setOrderPrice(price);
     }
 
+    public void setOrderPrice(int price){
+        this.orderPrice = price * count;
+    }
 
 
 
