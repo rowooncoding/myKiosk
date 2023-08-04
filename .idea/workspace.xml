@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: Order클래스 생성자 완료">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: orderPrice를 초기화 해주는 메소드 setOrderPrice 생성">
       <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +30,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Notification.DisplayName-DoNotAsk-Vcs Important Messages": "VCS 중요 메시지",
+    "Notification.DoNotAsk-Vcs Important Messages": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -102,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691151847197</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=":art: orderPrice를 초기화 해주는 메소드 setOrderPrice 생성">
+      <option name="closed" value="true" />
+      <created>1691151971894</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691151971894</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -113,6 +122,7 @@
     <MESSAGE value=":art: 재고 개수 관한 메소드 생성" />
     <MESSAGE value=":art: 키오스크 클래스 생성완료" />
     <MESSAGE value=":art: Order클래스 생성자 완료" />
-    <option name="LAST_COMMIT_MESSAGE" value=":art: Order클래스 생성자 완료" />
+    <MESSAGE value=":art: orderPrice를 초기화 해주는 메소드 setOrderPrice 생성" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: orderPrice를 초기화 해주는 메소드 setOrderPrice 생성" />
   </component>
 </project>
