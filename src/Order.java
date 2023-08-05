@@ -1,35 +1,40 @@
 public class Order {
-    private String menu;
-    private int count;
+    public String menu;
+    public int count;
     private int orderPrice;
 
-    // 생성자
-    public Order(String menu, int count, int price){
+    public Order(String menu, int count, int price) {
         this.menu = menu;
         this.count = count;
         setOrderPrice(price);
     }
 
-    public void setOrderPrice(int price){
-        this.orderPrice = price * count;
-        System.out.println(orderPrice + " 원 입니다.");
-    }
+    public boolean runOrder(int deposit) {
 
-    public boolean runOrder(int deposit){
         int change = deposit - orderPrice;
-        if(change >= 0){
-            System.out.println("잔돈 " + change + " 와 " + menu + "나왔습니다.");
+        if (change >= 0) {
+            System.out.print("잔돈 "+change+"와 ");
+            System.out.println(menu + " 나왔습니다.");
             return true;
-        }else{
+        } else {
             System.out.println("금액이 부족합니다.");
             return false;
         }
     }
 
 
+    private void setOrderPrice(int price) {
+        orderPrice = price * count;
+        System.out.println(orderPrice + "원 입니다.");
+    }
 
-
-
-
+    public int getOrderPrice() {
+        return this.orderPrice;
+    }
 
 }
+
+
+
+
+

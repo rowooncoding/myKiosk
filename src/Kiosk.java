@@ -1,13 +1,13 @@
 public class Kiosk {
-    public static final int KEY = 3;
+    public static int key = 3;
     private int inventory;
 
-    // 키오스크 생성자
-    public Kiosk(int inventory){
+    public Kiosk(int inventory) {
         this.inventory = inventory;
     }
 
-    public Order initOrder(String menu, int count){
+
+    public Order initOder(String menu, int count) {
         int price = 0;
 
         if (menu.equals("딸기요거트")){
@@ -20,39 +20,31 @@ public class Kiosk {
             price = 0;
         }
 
-        if(price == 0){
+        if (price == 0) {
             System.out.println("메뉴가 없습니다.");
             return null;
         }
 
-        if(isInvetory((count))){
+        if (isInventory(count)) {
             Order order = new Order(menu, count, price);
             return order;
-        }else{
+        } else {
             System.out.println("재고가 부족합니다.");
             return null;
         }
-
     }
 
 
-
-    // 재고 개수 확인하여 불린 타입 반환
-    public boolean isInvetory(int count){
-        if(inventory > count){
+    private boolean isInventory(int count) {
+        if (inventory >= count) {
             return true;
-        }else{
-            System.out.println("재고가 없습니다.");
+        } else {
             return false;
         }
     }
 
-    // 재고개수를 감소시켜줌
-    public void subInventory(int count){
-        this.inventory = inventory - count;
+
+    public void subInventory(int count) {
+        inventory -= count;
     }
-
-
-
-
 }
