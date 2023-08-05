@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: 기본 형태 완성">
+    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: 다음 실습을 위한 코드 수정">
+      <change afterPath="$PROJECT_DIR$/src/DeliveryOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/HereOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TakeoutOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kiosk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
@@ -153,7 +156,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691154448145</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary=":art: 다음 실습을 위한 코드 수정">
+      <option name="closed" value="true" />
+      <created>1691195776055</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1691195776055</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,6 +189,7 @@
     <MESSAGE value=":art: orderPrice를 초기화 해주는 메소드 setOrderPrice 생성" />
     <MESSAGE value=":art: Order 클래스 메소드 완성" />
     <MESSAGE value=":art: 기본 형태 완성" />
-    <option name="LAST_COMMIT_MESSAGE" value=":art: 기본 형태 완성" />
+    <MESSAGE value=":art: 다음 실습을 위한 코드 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: 다음 실습을 위한 코드 수정" />
   </component>
 </project>
