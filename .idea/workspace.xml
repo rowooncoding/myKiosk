@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: 다음 실습을 위한 코드 수정">
-      <change afterPath="$PROJECT_DIR$/src/DeliveryOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/HereOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TakeoutOrder.java" afterDir="false" />
+    <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: 상속과 오버라이딩을 사용해서 효율적인 코드 수정">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeliveryOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeliveryOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kiosk.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RunKiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RunKiosk.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -164,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691195776055</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary=":art: 상속과 오버라이딩을 사용해서 효율적인 코드 수정">
+      <option name="closed" value="true" />
+      <created>1691200364445</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1691200364445</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,6 +196,7 @@
     <MESSAGE value=":art: Order 클래스 메소드 완성" />
     <MESSAGE value=":art: 기본 형태 완성" />
     <MESSAGE value=":art: 다음 실습을 위한 코드 수정" />
-    <option name="LAST_COMMIT_MESSAGE" value=":art: 다음 실습을 위한 코드 수정" />
+    <MESSAGE value=":art: 상속과 오버라이딩을 사용해서 효율적인 코드 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value=":art: 상속과 오버라이딩을 사용해서 효율적인 코드 수정" />
   </component>
 </project>

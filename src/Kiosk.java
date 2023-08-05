@@ -1,5 +1,7 @@
-public class Kiosk {
-    public static int key = 3;
+import java.sql.SQLOutput;
+
+public class Kiosk implements DeliveryOrder.OnDelivery {
+    public final static int key = 3;
     private int inventory;
 
     public Kiosk(int inventory) {
@@ -26,20 +28,19 @@ public class Kiosk {
         }
 
         if (isInventory(count)) {
-            if(orderType == 1){
-                Order order = new DeliveryOrder(menu, count, price);
+            if (orderType == 1) {
+                DeliveryOrder order = new DeliveryOrder(menu, count, price);
+                order.setOnDelivery(this);
                 return order;
-            }else if(orderType == 2){
-                Order order = new TakeoutOrder(menu, count, price);
-                return order;
-            } else if (orderType == 3) {
-                Order order = new HereOrder(menu, count, price);
+            } else if (orderType == 2){
+                return new TakeoutOrder(menu, count, price);
+            } else {
+                return new HereOrder(menu, count, price);
             }
         } else {
             System.out.println("재고가 부족합니다.");
             return null;
         }
-        return null;
     }
 
 
@@ -54,5 +55,12 @@ public class Kiosk {
 
     public void subInventory(int count) {
         inventory -= count;
+    }
+
+    @Override
+    public void successDelivery(String locate, String menu, int count) {
+        System.out.print(locate + " 주소로 ");
+        System.out.println(menu + " 배달 주문이 완료 되었습니다.");
+        subInventory(count);
     }
 }
