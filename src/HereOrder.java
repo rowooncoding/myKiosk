@@ -1,5 +1,15 @@
 public class HereOrder extends Order{
     protected int orderNum;
+    OnHere onHere;
+
+    interface OnHere{
+        void successHere(String menu, int orderNum, int change);
+    }
+
+    public void setOnHere(OnHere onHere){
+        this.onHere = onHere;
+    }
+
 
     public HereOrder(String menu, int count, int price) {
         super(menu, count, price);
@@ -12,8 +22,7 @@ public class HereOrder extends Order{
     @Override
     public boolean runOrder(int deposit) {
         int change = deposit - orderPrice;
-        System.out.println("잔돈 " + change + " 입니다");
-        System.out.println(orderNum + "주문번호로 " + menu + " 주문 완료되었습니다.");
+        onHere.successHere(menu, change, orderNum);
         return false;
     }
 

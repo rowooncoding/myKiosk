@@ -1,5 +1,15 @@
 public class TakeoutOrder extends Order{
     protected int time;
+    OnTakeout onTakeout;
+
+    interface OnTakeout{
+        void successTakeout(String menu, int change, int time);
+    }
+
+    public void setOnTakeout(OnTakeout onTakeout){
+        this.onTakeout = onTakeout;
+    }
+
     public TakeoutOrder(String menu, int count, int price) {
         super(menu, count, price);
     }
@@ -12,8 +22,7 @@ public class TakeoutOrder extends Order{
     public boolean runOrder(int deposit) {
         int change = deposit - orderPrice;
         if(change >= 0){
-            System.out.println("잔돈" + change + " 입니다.");
-            System.out.println(time + " 뒤 " + menu + " 포장주문 완료하였습니다.");
+            onTakeout.successTakeout(menu, change, time);
         }
         return false;
     }

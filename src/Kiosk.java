@@ -1,6 +1,6 @@
 import java.sql.SQLOutput;
 
-public class Kiosk implements DeliveryOrder.OnDelivery {
+public class Kiosk implements DeliveryOrder.OnDelivery, HereOrder.OnHere, TakeoutOrder.OnTakeout {
     public final static int key = 3;
     private int inventory;
 
@@ -33,9 +33,13 @@ public class Kiosk implements DeliveryOrder.OnDelivery {
                 order.setOnDelivery(this);
                 return order;
             } else if (orderType == 2){
-                return new TakeoutOrder(menu, count, price);
+                HereOrder hereOrder = new HereOrder(menu, count, price);
+                hereOrder.setOnHere(this);
+                return hereOrder;
             } else {
-                return new HereOrder(menu, count, price);
+               TakeoutOrder takeoutOrder = new TakeoutOrder(menu, count, price);
+               takeoutOrder.setOnTakeout(this);
+               return takeoutOrder;
             }
         } else {
             System.out.println("재고가 부족합니다.");
@@ -62,5 +66,17 @@ public class Kiosk implements DeliveryOrder.OnDelivery {
         System.out.print(locate + " 주소로 ");
         System.out.println(menu + " 배달 주문이 완료 되었습니다.");
         subInventory(count);
+    }
+
+    @Override
+    public void successHere(String menu, int orderNum, int change) {
+        System.out.println("잔돈 " + change + " 입니다");
+        System.out.println(orderNum + "주문번호로 " + menu + " 주문 완료되었습니다.");
+    }
+
+    @Override
+    public void successTakeout(String menu, int change, int time) {
+        System.out.println("잔돈" + change + " 입니다.");
+        System.out.println(time + " 뒤 " + menu + " 포장주문 완료하였습니다.");
     }
 }
