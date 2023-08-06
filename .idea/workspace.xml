@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e97b4d7c-daa2-462f-95d2-30121c0d7937" name="변경" comment=":art: 인터페이스를 이용하여 코드 조정">
+      <change afterPath="$PROJECT_DIR$/src/Menu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DeliveryOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DeliveryOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/HereOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HereOrder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Kiosk.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RunKiosk.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RunKiosk.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TakeoutOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TakeoutOrder.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -178,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691209228100</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary=":art: 인터페이스를 이용하여 코드 조정">
+      <option name="closed" value="true" />
+      <created>1691312675124</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1691312675125</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

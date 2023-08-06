@@ -1,20 +1,22 @@
 public abstract class Order {
-    public String menu;
-    public int count;
+    protected Menu[] menus;
     protected int orderPrice;
 
-    public Order(String menu, int count, int price) {
-        this.menu = menu;
-        this.count = count;
-        setOrderPrice(price);
+    public Order(Menu[] menus) {
+        this.menus = menus;
+        setOrderPrice();
     }
 
-    public abstract boolean runOrder(int deposit);
+    public abstract void runOrder(int deposit);
 
 
-    private void setOrderPrice(int price) {
-        orderPrice = price * count;
-        System.out.println(orderPrice + "원 입니다.");
+    public void setOrderPrice() {
+        for (Menu m : menus) {
+            if (m == null) {
+                break;
+            }
+            this.orderPrice += m.price;
+        }
     }
 
     public int getOrderPrice() {
@@ -22,8 +24,3 @@ public abstract class Order {
     }
 
 }
-
-
-
-
-

@@ -1,17 +1,17 @@
 public class TakeoutOrder extends Order{
-    protected int time;
-    OnTakeout onTakeout;
+    private OnTakeout onTakeout;
+    private int time;
 
     interface OnTakeout{
-        void successTakeout(String menu, int change, int time);
+        void successTakeout(int change, int time, Menu[] menus);
     }
 
-    public void setOnTakeout(OnTakeout onTakeout){
+    public void setOnTakeout(OnTakeout onTakeout) {
         this.onTakeout = onTakeout;
     }
 
-    public TakeoutOrder(String menu, int count, int price) {
-        super(menu, count, price);
+    public TakeoutOrder(Menu[] menus) {
+        super(menus);
     }
 
     public void setTime(int time) {
@@ -19,16 +19,21 @@ public class TakeoutOrder extends Order{
     }
 
     @Override
-    public boolean runOrder(int deposit) {
+    public void runOrder(int deposit) {
         int change = deposit - orderPrice;
-        if(change >= 0){
-            onTakeout.successTakeout(menu, change, time);
+        if (change >= 0) {
+            onTakeout.successTakeout(change, time, menus);
+        } else {
+            System.out.println("금액이 부족합니다.");
         }
-        return false;
     }
 
-    private void setOrderPrice(int price) {
-        orderPrice = price * count -500;
-        System.out.println("테이크 아웃은 500원 할인되어" + orderPrice + "원 입니다.");
+    @Override
+    public void setOrderPrice() {
+        // TODO Auto-generated method stub
+        super.setOrderPrice();
+        this.orderPrice -= 500;
+        System.out.print("테이크 아웃은 500원 할인되어 ");
+        System.out.println(orderPrice + "원 입니다.");
     }
 }

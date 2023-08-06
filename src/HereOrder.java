@@ -1,33 +1,38 @@
 public class HereOrder extends Order{
-    protected int orderNum;
-    OnHere onHere;
+    private OnHere onHere;
+    private int orderNum;
 
     interface OnHere{
-        void successHere(String menu, int orderNum, int change);
+        void successHere(int change, int orderNum, Menu[] menus);
     }
 
-    public void setOnHere(OnHere onHere){
+    public void setOnHere(OnHere onHere) {
         this.onHere = onHere;
     }
 
-
-    public HereOrder(String menu, int count, int price) {
-        super(menu, count, price);
+    public HereOrder(Menu[] menus) {
+        super(menus);
+        // TODO Auto-generated constructor stub
     }
 
     public void setOrderNum(int orderNum) {
-        orderNum = orderNum;
+        this.orderNum = orderNum;
     }
 
     @Override
-    public boolean runOrder(int deposit) {
+    public void runOrder(int deposit) {
         int change = deposit - orderPrice;
-        onHere.successHere(menu, change, orderNum);
-        return false;
+        if (change >= 0) {
+            onHere.successHere(change, orderNum, menus);
+        } else {
+            System.out.println("금액이 부족합니다.");
+        }
     }
 
-    private void setOrderPrice(int price) {
-        orderPrice = price * count;
+    @Override
+    public void setOrderPrice() {
+        // TODO Auto-generated method stub
+        super.setOrderPrice();
         System.out.println(orderPrice + "원 입니다.");
     }
 }
